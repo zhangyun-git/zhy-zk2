@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*字体大小*/
+/*灰色字体颜色*/
+/*白色字体*/
+/*黑色字体*/
+/*按钮灰色边框*/
+/*蓝色边框颜色*/
+/*蓝色字体颜色*/
+/*group 底部边框颜色*/
+/*header背景*/
+/*搜索框border颜色*/
+/*banner buttle*/
+/*orange line颜色*/
+/*line bottom颜色*/
+/* 书背景*/
+/* 书边框颜色 */
+/*书的阴影*/
+/*绿色标签颜色*/
+/*限免tag背景*/
+/*按钮背景颜色*/
+/*按钮border颜色*/
+/*标签背景*/
+/*标签背景色*/
+/*详情界面*/
+/* 阅读界面 */
+/*阅读界面标题*/
+/*超过几行显示省略号*/
+/*背景*/
+/* 滚动 */
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .wrap section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #7E0505; }
+    .wrap section h2 {
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      line-height: 1.6rem;
+      font-size: 0.48rem; }
+    .wrap section .list {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      padding: 0 0.21333rem;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .wrap section .list dl {
+        width: 30%;
+        margin: 0.05333rem;
+        background: #fff;
+        padding: 0.05333rem;
+        border-radius: 0.10667rem; }
+        .wrap section .list dl dt img {
+          width: 100%; }
+        .wrap section .list dl dd {
+          color: red;
+          text-align: center;
+          line-height: 0.53333rem; }
+  .wrap footer {
+    width: 100%;
+    height: 1.17333rem;
+    background: #fff;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    text-align: center;
+    padding: 0 0.10667rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .wrap footer dl {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+      .wrap footer dl dt img {
+        width: 0.53333rem;
+        padding: 0.10667rem 0; }

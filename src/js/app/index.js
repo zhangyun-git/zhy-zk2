@@ -4,6 +4,7 @@ require(['jquery','render'],function($,render){
         dataType:'json',
         success:function(res){
             console.log(res);
+            render('#tpl','.list',res)
         },
         error:function(err){
             console.log(err)

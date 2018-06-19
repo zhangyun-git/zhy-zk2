@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/libs/flexible.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <section>
+            <h2>必买大牌</h2>
+            <div class="list">
+                    
+            </div>
+        </section>
+        <script id="tpl" type="text/x-handlebars-template">
+            {{#each list}}
+                <dl>
+                    <dt>
+                        <img src="{{img}}">
+                    </dt>
+                    <dd>
+                        {{title}}
+                    </dd>
+                </dl>
+            {{/each}}
+        </script>
+        <footer>
+            <dl>
+                <dt>
+                    <img src="img/1_1.jpg" alt="">
+                </dt>
+                <dd>
+                    主会场
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="img/1_2.jpg" alt="">
+                </dt>
+                <dd>
+                    全部会场
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="img/1_2.jpg" alt="">
+                </dt>
+                <dd>
+                    抢5折卷
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="img/1_2.jpg" alt="">
+                </dt>
+                <dd>
+                    全部会场
+                </dd>
+            </dl>
+            <dl>
+                <dt>
+                    <img src="img/1_2.jpg" alt="">
+                </dt>
+                <dd>
+                    我的618
+                </dd>
+            </dl>
+        </footer>
+    </div>
+    <script src="js/libs/require.js"></script>
+    <script>
+        require(['./js/main'],function(){
+            require(['index']);
+        })
+    </script>
+</body>
+</html>
