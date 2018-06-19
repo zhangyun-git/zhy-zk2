@@ -6,7 +6,6 @@ var sass = require('gulp-sass'); // 编译scss
 var sequence = require('gulp-sequence'); // 设置任务的执行顺序
 var autoprefixer = require('gulp-autoprefixer'); // 自动添加前缀
 var clean = require('gulp-clean'); // 删除指定文件
-var minhtml = require('gulp-clean-html'); // 压缩html
 var path = require('path'); // 引入node内置模块
 var fs = require('fs'); // 引入node内置模块
 var url = require('url'); // 引入node内置模块
@@ -49,10 +48,6 @@ gulp.task('watch',function(){
     return gulp.watch('src/scss/*.scss',['devcss']);
 })
 
-// 开发环境 --- 设置任务执行的顺序
-gulp.task('dev',function(cb){
-    sequence('devcss','watch','devServer',cb)
-})
 
 // 线上环境 --- 起服务
 gulp.task('buildServer',function(){
@@ -100,4 +95,9 @@ gulp.task('buildjs',function(){
 // 线上环境 --- 设置任务执行的顺序
 gulp.task('build',function(cb){
     sequence('clean','buildCss','buildjs','buildServer',cb)
+})
+
+// 开发环境 --- 设置任务执行的顺序
+gulp.task('dev',function(cb){
+    sequence('devcss','watch','devServer',cb)
 })
